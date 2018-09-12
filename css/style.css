@@ -1,0 +1,176 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#1e5460), color-stop(#0b4558), color-stop(#00364f), color-stop(#002844), to(#051937));
+  background-image: -webkit-linear-gradient(left top, #1e5460, #0b4558, #00364f, #002844, #051937);
+  background-image: -o-linear-gradient(left top, #1e5460, #0b4558, #00364f, #002844, #051937);
+  background-image: linear-gradient(to right bottom, #1e5460, #0b4558, #00364f, #002844, #051937);
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-repeat: no-repeat;
+  color: #000;
+  text-align: center;
+  height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.w-100 {
+  width: 100%;
+  display: block;
+}
+
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+/* 576px */
+@media (min-width: 36em) {
+  .container {
+    max-width: 54rem;
+  }
+}
+
+/* 768px */
+@media (min-width: 48em) {
+  .container {
+    max-width: 72rem;
+  }
+}
+
+/* 992px */
+@media (min-width: 62em) {
+  .container {
+    max-width: 96rem;
+  }
+}
+
+/* 1200px */
+@media (min-width: 75em) {
+  .container {
+    max-width: 114rem;
+  }
+}
+
+.row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin-left: -1.5rem;
+  margin-right: -1.5rem;
+}
+
+[class^="col"] {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.col {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 0;
+      -ms-flex: 1 0 0px;
+          flex: 1 0 0;
+  max-width: 100%;
+}
+
+/* Which breakpoint you want to make grid 100% width */
+/* 768px */
+@media (min-width: 48em) {
+  .col-1-of-2 {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 -webkit-calc(100% / 2);
+        -ms-flex: 0 0 calc(100% / 2);
+            flex: 0 0 calc(100% / 2);
+    max-width: -webkit-calc(100% / 2);
+    max-width: calc(100% / 2);
+  }
+  
+  .col-1-of-3 {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 -webkit-calc(100% / 3);
+        -ms-flex: 0 0 calc(100% / 3);
+            flex: 0 0 calc(100% / 3);
+    max-width: -webkit-calc(100% / 3);
+    max-width: calc(100% / 3);
+  }
+  
+  .col-2-of-3 {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 -webkit-calc(2 * (100% / 3));
+        -ms-flex: 0 0 calc(2 * (100% / 3));
+            flex: 0 0 calc(2 * (100% / 3));
+    max-width: -webkit-calc(2 * (100% / 3));
+    max-width: calc(2 * (100% / 3));
+  }
+  
+  .col-1-of-4 {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 -webkit-calc(100% / 4);
+        -ms-flex: 0 0 calc(100% / 4);
+            flex: 0 0 calc(100% / 4);
+    max-width: -webkit-calc(100% / 4);
+    max-width: calc(100% / 4);
+  }
+  
+  .col-2-of-4 {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 -webkit-calc(2 * (100% / 4));
+        -ms-flex: 0 0 calc(2 * (100% / 4));
+            flex: 0 0 calc(2 * (100% / 4));
+    max-width: -webkit-calc(2 * (100% / 4));
+    max-width: calc(2 * (100% / 4));
+  }
+  
+  .col-3-of-4 {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 -webkit-calc(3 * (100% / 4));
+        -ms-flex: 0 0 calc(3 * (100% / 4));
+            flex: 0 0 calc(3 * (100% / 4));
+    max-width: -webkit-calc(3 * (100% / 4));
+    max-width: calc(3 * (100% / 4));
+  }
+}
+
+.col-1-of-2,
+.col-1-of-3,
+.col-1-of-4,
+.col-2-of-3,
+.col-2-of-4,
+.col-3-of-4 {
+  width: 100%;
+  position: relative;
+}
+
+.card {
+  background-color: #fff;
+  -webkit-box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+          box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* End of Utilities */
